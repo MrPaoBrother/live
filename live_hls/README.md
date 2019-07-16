@@ -28,8 +28,11 @@ $ python server.py
 ```
 
 ## demo展示
+![image](live_hls/static/images/hls_demo.png)
 
 ## 参考
 [1] [hls协议官网文档](https://developer.apple.com/streaming/)
+
 [2] [ffmpeg使用手册](https://ffmpeg.org/ffmpeg-formats.html)
+
 [3] [hls.js使用手册](https://video-dev.github.io/hls.js/stable/)
