@@ -28,7 +28,7 @@ $ python server.py
 ```
 
 ## demo展示
-![image](live_hls/static/images/hls_demo.png)
+![image](static/images/hls_demo.png)
 
 ## 参考
 [1] [hls协议官网文档](https://developer.apple.com/streaming/)
