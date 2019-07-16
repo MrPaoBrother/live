@@ -1,0 +1,26 @@
+<video id="video" controls width="100%"></video>
+<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+<!-- Or if you want a more recent canary version -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/hls.js@canary"></script> -->
+<video id="video"></video>
+<script>
+    var video = document.getElementById('video');
+    var live_src = "http://localhost:8888/live";
+
+    if (Hls.isSupported()) {
+        video.control = false;
+
+        var hls = new Hls();
+        hls.loadSource(live_src);
+        hls.attachMedia(video);
+        hls.on(Hls.Events.MANIFEST_PARSED, function () {
+            video.play();
+        });
+    }
+    else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+        video.src = live_src;
+        video.addEventListener('loadedmetadata', function () {
+            video.play();
+        });
+    }
+</script>
