@@ -1,0 +1,21 @@
+<html>  
+  <head>  
+  <title>视频直播</title>  
+  <meta charset="utf-8">  
+  <link href="http://vjs.zencdn.net/5.5.3/video-js.css" rel="stylesheet">  
+  <!-- If you'd like to support IE8 -->  
+  <script src="http://vjs.zencdn.net/ie8/1.1.1/videojs-ie8.min.js"></script>  
+</head>  
+<body>  
+  <h1>直播间</h1>  
+ <video id="my-video" class="video-js" controls preload="auto" width="640" height="300" data-setup="{}">  
+    <source src="rtmp://你的rtmp地址/live/audio" type="rtmp/flv">  
+    <!-- 如果没有rtmp地址可以参考我的博客搭建一个: https://blog.csdn.net/g8433373/article/details/96163359 -->  
+    <p class="vjs-no-js">播放视频需要启用 JavaScript，推荐使用支持HTML5的浏览器访问。  
+      To view this video please enable JavaScript, and consider upgrading to a web browser that  
+      <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>  
+    </p>  
+ </video>  
+ <script src="http://vjs.zencdn.net/5.5.3/video.js"></script>  
+</body>  
+</html>
