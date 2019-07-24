@@ -8,7 +8,7 @@
 
 * 详情见[live_websocket](live_websocket)
 
-## 基于rmtp的直播技术(待更新)
+## 基于rmtp的直播技术(已更新)
 
 * 详情见[live_rmtp](live_rmtp)
 
